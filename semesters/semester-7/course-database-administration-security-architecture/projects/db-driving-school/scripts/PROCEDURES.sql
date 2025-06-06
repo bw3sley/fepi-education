@@ -14,7 +14,7 @@ BEGIN
        PRINT 'Error inserting user';
     END CATCH
 END;
-GO;
+GO
 
 CREATE PROCEDURE _sp_register_exam
 @studentID INT,
@@ -30,7 +30,7 @@ BEGIN
         PRINT 'Error inserting exam';
     END CATCH
 END;
-GO;
+GO
 
 CREATE PROCEDURE _sp_update_question
 @questionId INT,
@@ -47,7 +47,7 @@ BEGIN
         PRINT 'Error updating question';
     END CATCH
 END;
-GO;
+GO
 
 CREATE PROCEDURE _sp_filter_students
 @name NVARCHAR(100) = NULL,
@@ -75,7 +75,7 @@ BEGIN
         PRINT 'Error executing dynamic student filter query';
     END CATCH
 END;
-GO;
+GO
 
 CREATE PROCEDURE _sp_bulk_insert_students
 @file_path NVARCHAR(255)
@@ -102,4 +102,4 @@ BEGIN
         PRINT 'Error performing bulk insert';
     END CATCH
 END;
-GO;
+GO

@@ -1,10 +1,10 @@
-DROP DATABASE IF EXISTS driving_school_db;
+DROP DATABASE IF EXISTS db_driving_school;
 GO
 
-CREATE DATABASE driving_school_db;
+CREATE DATABASE db_driving_school;
 GO
 
-USE driving_school_db;
+USE db_driving_school;
 GO
 
 CREATE TABLE students (
