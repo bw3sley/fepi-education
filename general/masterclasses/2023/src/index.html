@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./global.css">
+
+    <title>Rocketflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./assets/arrow.svg" alt="Imagem da logo da Rocketflix" title="Imagem da logo da Rocketflix">
+            
+            <h1>Não sabe o que assistir?</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container initial" id="container_initial">
+            <div class="col-a">
+                <img src="./assets/code-screen.png" alt="Imagem de um tela com códigos de alguma linguagem de programação" title="Imagem de um tela com códigos de alguma linguagem de programação" id="movie_poster">
+            </div>
+
+            <div class="col-b">
+                <div class="content" id="content">
+                    <h2 id="movie_title"></h2>
+    
+                    <p id="movie_overview"></p>
+                </div>
+            </div>
+
+            <div class="col-c">
+                <button type="button" class="button" title="Encontrar filme" aria-label="Encontrar filme" id="find-movie">
+                    <img src="./assets/arrow.svg" alt="Imagem da logo da Rocketflix" title="Imagem da logo da Rocketflix">
+                    Encontrar filme
+                </button>
+    
+                <p class="small">Clique em "Encontrar filme" que traremos informações de algum filme para você assistir hoje.</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./main.js"></script>    
+</body>
+</html>

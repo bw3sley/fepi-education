@@ -1,0 +1,218 @@
+:root {
+    --title: hsl(30, 100%, 99%);
+    --subtitle: hsl(0, 0%, 70%);
+    
+    --bg-button: hsl(30, 12%, 90%);
+    --text-button: hsl(0, 0%, 10%);
+    
+    --background: linear-gradient(43deg, hsl(222, 75%, 25%) 0%, hsl(0, 0%, 0%) 52%, hsl(3, 69%, 45%) 100%);
+
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, ::after, *::before {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+
+    font-size: 1.6rem;
+}
+
+body {
+    text-align: center;
+
+    background: var(--background);
+    color: var(--subtitle);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    overflow: overlay;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+
+    color: var(--title);
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+
+    color: var(--title);
+}
+
+img {
+    display: block;
+
+    margin-inline: auto;
+
+    max-width: 17.1rem;
+    width: 100%;
+    height: 24.5rem;
+}
+
+header {
+    margin-block: 5rem 3rem;
+}
+
+header img {
+    width: 8.8rem;
+    height: 6.2rem;
+
+    margin-bottom: 2rem;
+}
+
+main {
+    margin-bottom: 10.3rem;
+}
+
+p.small {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.container {
+    padding-inline: 3rem;
+}
+
+.container.initial .col-a img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container.initial .col-a, .container.initial .col-b {
+    display: none;
+}
+
+.content {
+    margin-top: 2rem;
+}
+
+.content h2 {
+    margin-bottom: 2rem;
+}
+
+.content.not-found h2 {
+    margin-top: 10rem;
+}
+
+.content.not-found p {
+    display: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    border: 1px solid var(--text-button);
+    border-radius: .5rem;
+
+    margin-inline: auto;
+    margin-block: 3rem 2.6rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+
+    cursor: pointer;
+
+    transition: opacity 300ms;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+button img {
+    width: 2.5rem;
+    height: 3.5rem;
+}
+
+.button {
+    background-color: var(--bg-button);
+    color: var(--text-button);
+
+    padding: .8rem 1.6rem;
+}
+
+@media (min-width: 769px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        padding: initial;
+        margin: initial;
+    }
+
+    .col-a {
+        grid-area: A;
+    }
+
+    .col-b {
+        grid-area: B;
+
+        text-align: left;
+
+        margin-bottom: 3rem;
+    }
+
+    .col-c {
+        grid-area: C;
+    }
+
+    header {
+        margin-block: 12.6rem 3rem;
+
+        max-width: 66.6rem;
+        width: 100%;
+
+        margin-inline: auto;
+    }
+
+    header img {
+        margin-bottom: 1rem;
+    }   
+
+    main {
+        margin-bottom: 19.7rem;
+
+        max-width: 62.8rem;
+        width: 100%;
+
+        margin-inline: auto;
+    }
+   
+    main .container {
+        display: grid;
+
+        grid-template-columns: 24.3rem 42.3rem 1fr;
+        grid-template-areas: 
+            "A B"
+            "C C";
+
+        padding: 0;
+    }
+
+    .col-a img {
+        margin: 4rem 0 0 0;
+    }
+
+    p.small {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+
+        width: 38.1rem;
+
+        margin-inline: auto;
+    }
+}
