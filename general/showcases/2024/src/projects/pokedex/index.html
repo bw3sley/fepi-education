@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="./assets/pokedex.svg" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./global.css">
+
+    <title>Pokedex</title>
+</head>
+<body>
+    <main>
+        <img 
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" 
+            alt=""
+            class="pokemonImage"
+        />
+
+        <div class="pokemonData">
+            <strong class="pokemonNumber">1</strong>
+            <span>-</span>
+            <strong class="pokemonName">Bulbasaur</strong>
+        </div>
+
+        <div action="" class="form">
+            <input 
+              type="search"
+              id=""
+              class="searchInput"
+              placeholder="Nome do pokemon"
+    
+              required 
+            />
+        </div>
+
+        <div class="buttonWrapper">
+            <button 
+              type="button" 
+              class="button buttonPrev"
+            >
+              &lt; Prev
+            </button>
+            
+            <button 
+              type="button" 
+              class="button buttonNext"
+            >
+              Next &gt;
+            </button>
+          </div>
+    
+          <img src="./assets/pokedex.png" alt="" />
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
